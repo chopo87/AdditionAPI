@@ -26,7 +26,7 @@ public class ApiTransferContainer extends ApiAbstractModel {
     public ApiTransferContainer(ApiSession session, List<ApiAbstractTransferModel> dataList) {
         this.session = session;
         this.data = new ArrayList<>(dataList);
-        this.transmissionType = TransmissionType.BATCH;
+        this.transmissionType = (data.size() > 1) ? TransmissionType.BATCH : TransmissionType.SINGLE;
     }
 
     public ApiSession getSession() {
