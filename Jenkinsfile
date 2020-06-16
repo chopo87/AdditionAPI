@@ -15,7 +15,7 @@ pipeline {
         
         stage('Sources') {
             steps {
-              git url: 'git@github.com:chopo87/AdditionAPI.git', credentialsId: 'Deontics-CAPABLE-GitHub-Key'
+              git url: 'git@github.com:chopo87/AdditionAPI.git', credentialsId: 'Deontics-Test-GitHub-Key-Aitzol', branch: 'master'
             }
         }
         
