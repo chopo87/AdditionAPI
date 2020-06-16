@@ -37,3 +37,9 @@ Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
+
+### Misc ###
+*.swp
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
